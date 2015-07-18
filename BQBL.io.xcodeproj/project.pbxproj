@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4544F4401B5B017800552B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F43F1B5B017800552B49 /* AppDelegate.swift */; };
+		4544F4421B5B017800552B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4411B5B017800552B49 /* ViewController.swift */; };
+		4544F4451B5B017800552B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4431B5B017800552B49 /* Main.storyboard */; };
+		4544F4471B5B017800552B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4461B5B017800552B49 /* Assets.xcassets */; };
+		4544F44A1B5B017800552B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4481B5B017800552B49 /* LaunchScreen.storyboard */; };
+		4544F4551B5B017800552B49 /* BQBL_ioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4541B5B017800552B49 /* BQBL_ioTests.swift */; };
+		4544F4601B5B017800552B49 /* BQBL_ioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F45F1B5B017800552B49 /* BQBL_ioUITests.swift */; };
+		4544F4651B5B017800552B49 /* BQBL.io WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4544F4641B5B017800552B49 /* BQBL.io WatchKit App.app */; };
+		4544F46B1B5B017800552B49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4691B5B017800552B49 /* Interface.storyboard */; };
+		4544F46D1B5B017800552B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544F46C1B5B017800552B49 /* Assets.xcassets */; };
+		4544F4741B5B017800552B49 /* BQBL.io WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4544F4731B5B017800552B49 /* BQBL.io WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4544F47B1B5B017800552B49 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F47A1B5B017800552B49 /* InterfaceController.swift */; };
+		4544F47D1B5B017800552B49 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F47C1B5B017800552B49 /* ExtensionDelegate.swift */; };
+		4544F47F1B5B017800552B49 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F47E1B5B017800552B49 /* NotificationController.swift */; };
+		4544F4811B5B017800552B49 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4801B5B017800552B49 /* GlanceController.swift */; };
+		4544F4831B5B017800552B49 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4821B5B017800552B49 /* ComplicationController.swift */; };
+		4544F4851B5B017800552B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4841B5B017800552B49 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4544F4511B5B017800552B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4544F4341B5B017800552B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4544F43B1B5B017800552B49;
+			remoteInfo = BQBL.io;
+		};
+		4544F45C1B5B017800552B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4544F4341B5B017800552B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4544F43B1B5B017800552B49;
+			remoteInfo = BQBL.io;
+		};
+		4544F4661B5B017800552B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4544F4341B5B017800552B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4544F4631B5B017800552B49;
+			remoteInfo = "BQBL.io WatchKit App";
+		};
+		4544F4751B5B017800552B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4544F4341B5B017800552B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4544F4721B5B017800552B49;
+			remoteInfo = "BQBL.io WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4544F48C1B5B017800552B49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4544F4741B5B017800552B49 /* BQBL.io WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4901B5B017800552B49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4544F4651B5B017800552B49 /* BQBL.io WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4544F43C1B5B017800552B49 /* BQBL.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BQBL.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4544F43F1B5B017800552B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4544F4411B5B017800552B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4544F4441B5B017800552B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4544F4461B5B017800552B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4544F4491B5B017800552B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4544F44B1B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544F4501B5B017800552B49 /* BQBL.ioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BQBL.ioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4544F4541B5B017800552B49 /* BQBL_ioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQBL_ioTests.swift; sourceTree = "<group>"; };
+		4544F4561B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544F45B1B5B017800552B49 /* BQBL.ioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BQBL.ioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4544F45F1B5B017800552B49 /* BQBL_ioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQBL_ioUITests.swift; sourceTree = "<group>"; };
+		4544F4611B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544F4641B5B017800552B49 /* BQBL.io WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BQBL.io WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4544F46A1B5B017800552B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4544F46C1B5B017800552B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4544F46E1B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544F4731B5B017800552B49 /* BQBL.io WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BQBL.io WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4544F4791B5B017800552B49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4544F47A1B5B017800552B49 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4544F47C1B5B017800552B49 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4544F47E1B5B017800552B49 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4544F4801B5B017800552B49 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		4544F4821B5B017800552B49 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4544F4841B5B017800552B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4544F4861B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4544F4391B5B017800552B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F44D1B5B017800552B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4581B5B017800552B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4701B5B017800552B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4544F4331B5B017800552B49 = {
+			isa = PBXGroup;
+			children = (
+				4544F43E1B5B017800552B49 /* BQBL.io */,
+				4544F4531B5B017800552B49 /* BQBL.ioTests */,
+				4544F45E1B5B017800552B49 /* BQBL.ioUITests */,
+				4544F4681B5B017800552B49 /* BQBL.io WatchKit App */,
+				4544F4771B5B017800552B49 /* BQBL.io WatchKit Extension */,
+				4544F43D1B5B017800552B49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4544F43D1B5B017800552B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4544F43C1B5B017800552B49 /* BQBL.io.app */,
+				4544F4501B5B017800552B49 /* BQBL.ioTests.xctest */,
+				4544F45B1B5B017800552B49 /* BQBL.ioUITests.xctest */,
+				4544F4641B5B017800552B49 /* BQBL.io WatchKit App.app */,
+				4544F4731B5B017800552B49 /* BQBL.io WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4544F43E1B5B017800552B49 /* BQBL.io */ = {
+			isa = PBXGroup;
+			children = (
+				4544F43F1B5B017800552B49 /* AppDelegate.swift */,
+				4544F4411B5B017800552B49 /* ViewController.swift */,
+				4544F4431B5B017800552B49 /* Main.storyboard */,
+				4544F4461B5B017800552B49 /* Assets.xcassets */,
+				4544F4481B5B017800552B49 /* LaunchScreen.storyboard */,
+				4544F44B1B5B017800552B49 /* Info.plist */,
+			);
+			path = BQBL.io;
+			sourceTree = "<group>";
+		};
+		4544F4531B5B017800552B49 /* BQBL.ioTests */ = {
+			isa = PBXGroup;
+			children = (
+				4544F4541B5B017800552B49 /* BQBL_ioTests.swift */,
+				4544F4561B5B017800552B49 /* Info.plist */,
+			);
+			path = BQBL.ioTests;
+			sourceTree = "<group>";
+		};
+		4544F45E1B5B017800552B49 /* BQBL.ioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4544F45F1B5B017800552B49 /* BQBL_ioUITests.swift */,
+				4544F4611B5B017800552B49 /* Info.plist */,
+			);
+			path = BQBL.ioUITests;
+			sourceTree = "<group>";
+		};
+		4544F4681B5B017800552B49 /* BQBL.io WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4544F4691B5B017800552B49 /* Interface.storyboard */,
+				4544F46C1B5B017800552B49 /* Assets.xcassets */,
+				4544F46E1B5B017800552B49 /* Info.plist */,
+			);
+			path = "BQBL.io WatchKit App";
+			sourceTree = "<group>";
+		};
+		4544F4771B5B017800552B49 /* BQBL.io WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4544F47A1B5B017800552B49 /* InterfaceController.swift */,
+				4544F47C1B5B017800552B49 /* ExtensionDelegate.swift */,
+				4544F47E1B5B017800552B49 /* NotificationController.swift */,
+				4544F4801B5B017800552B49 /* GlanceController.swift */,
+				4544F4821B5B017800552B49 /* ComplicationController.swift */,
+				4544F4841B5B017800552B49 /* Assets.xcassets */,
+				4544F4861B5B017800552B49 /* Info.plist */,
+				4544F4781B5B017800552B49 /* Supporting Files */,
+			);
+			path = "BQBL.io WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4544F4781B5B017800552B49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4544F4791B5B017800552B49 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4544F43B1B5B017800552B49 /* BQBL.io */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4544F4911B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io" */;
+			buildPhases = (
+				4544F4381B5B017800552B49 /* Sources */,
+				4544F4391B5B017800552B49 /* Frameworks */,
+				4544F43A1B5B017800552B49 /* Resources */,
+				4544F4901B5B017800552B49 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4544F4671B5B017800552B49 /* PBXTargetDependency */,
+			);
+			name = BQBL.io;
+			productName = BQBL.io;
+			productReference = 4544F43C1B5B017800552B49 /* BQBL.io.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4544F44F1B5B017800552B49 /* BQBL.ioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4544F4941B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioTests" */;
+			buildPhases = (
+				4544F44C1B5B017800552B49 /* Sources */,
+				4544F44D1B5B017800552B49 /* Frameworks */,
+				4544F44E1B5B017800552B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4544F4521B5B017800552B49 /* PBXTargetDependency */,
+			);
+			name = BQBL.ioTests;
+			productName = BQBL.ioTests;
+			productReference = 4544F4501B5B017800552B49 /* BQBL.ioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4544F45A1B5B017800552B49 /* BQBL.ioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4544F4971B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioUITests" */;
+			buildPhases = (
+				4544F4571B5B017800552B49 /* Sources */,
+				4544F4581B5B017800552B49 /* Frameworks */,
+				4544F4591B5B017800552B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4544F45D1B5B017800552B49 /* PBXTargetDependency */,
+			);
+			name = BQBL.ioUITests;
+			productName = BQBL.ioUITests;
+			productReference = 4544F45B1B5B017800552B49 /* BQBL.ioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4544F4631B5B017800552B49 /* BQBL.io WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4544F48D1B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io WatchKit App" */;
+			buildPhases = (
+				4544F4621B5B017800552B49 /* Resources */,
+				4544F48C1B5B017800552B49 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4544F4761B5B017800552B49 /* PBXTargetDependency */,
+			);
+			name = "BQBL.io WatchKit App";
+			productName = "BQBL.io WatchKit App";
+			productReference = 4544F4641B5B017800552B49 /* BQBL.io WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4544F4721B5B017800552B49 /* BQBL.io WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4544F4891B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io WatchKit Extension" */;
+			buildPhases = (
+				4544F46F1B5B017800552B49 /* Sources */,
+				4544F4701B5B017800552B49 /* Frameworks */,
+				4544F4711B5B017800552B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BQBL.io WatchKit Extension";
+			productName = "BQBL.io WatchKit Extension";
+			productReference = 4544F4731B5B017800552B49 /* BQBL.io WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4544F4341B5B017800552B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Atharv Vaish";
+				TargetAttributes = {
+					4544F43B1B5B017800552B49 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4544F44F1B5B017800552B49 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4544F43B1B5B017800552B49;
+					};
+					4544F45A1B5B017800552B49 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4544F43B1B5B017800552B49;
+					};
+					4544F4631B5B017800552B49 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4544F4721B5B017800552B49 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 4544F4371B5B017800552B49 /* Build configuration list for PBXProject "BQBL.io" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4544F4331B5B017800552B49;
+			productRefGroup = 4544F43D1B5B017800552B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4544F43B1B5B017800552B49 /* BQBL.io */,
+				4544F44F1B5B017800552B49 /* BQBL.ioTests */,
+				4544F45A1B5B017800552B49 /* BQBL.ioUITests */,
+				4544F4631B5B017800552B49 /* BQBL.io WatchKit App */,
+				4544F4721B5B017800552B49 /* BQBL.io WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4544F43A1B5B017800552B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F44A1B5B017800552B49 /* LaunchScreen.storyboard in Resources */,
+				4544F4471B5B017800552B49 /* Assets.xcassets in Resources */,
+				4544F4451B5B017800552B49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F44E1B5B017800552B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4591B5B017800552B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4621B5B017800552B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F46D1B5B017800552B49 /* Assets.xcassets in Resources */,
+				4544F46B1B5B017800552B49 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4711B5B017800552B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F4851B5B017800552B49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4544F4381B5B017800552B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F4421B5B017800552B49 /* ViewController.swift in Sources */,
+				4544F4401B5B017800552B49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F44C1B5B017800552B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F4551B5B017800552B49 /* BQBL_ioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F4571B5B017800552B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F4601B5B017800552B49 /* BQBL_ioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4544F46F1B5B017800552B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4544F47F1B5B017800552B49 /* NotificationController.swift in Sources */,
+				4544F47D1B5B017800552B49 /* ExtensionDelegate.swift in Sources */,
+				4544F4831B5B017800552B49 /* ComplicationController.swift in Sources */,
+				4544F47B1B5B017800552B49 /* InterfaceController.swift in Sources */,
+				4544F4811B5B017800552B49 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4544F4521B5B017800552B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4544F43B1B5B017800552B49 /* BQBL.io */;
+			targetProxy = 4544F4511B5B017800552B49 /* PBXContainerItemProxy */;
+		};
+		4544F45D1B5B017800552B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4544F43B1B5B017800552B49 /* BQBL.io */;
+			targetProxy = 4544F45C1B5B017800552B49 /* PBXContainerItemProxy */;
+		};
+		4544F4671B5B017800552B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4544F4631B5B017800552B49 /* BQBL.io WatchKit App */;
+			targetProxy = 4544F4661B5B017800552B49 /* PBXContainerItemProxy */;
+		};
+		4544F4761B5B017800552B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4544F4721B5B017800552B49 /* BQBL.io WatchKit Extension */;
+			targetProxy = 4544F4751B5B017800552B49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4544F4431B5B017800552B49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4544F4441B5B017800552B49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4544F4481B5B017800552B49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4544F4491B5B017800552B49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4544F4691B5B017800552B49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4544F46A1B5B017800552B49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4544F4871B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4544F4881B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4544F48A1B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "BQBL.io WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4544F48B1B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "BQBL.io WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4544F48E1B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BQBL_io_WatchKit_Extension;
+				INFOPLIST_FILE = "BQBL.io WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4544F48F1B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BQBL_io_WatchKit_Extension;
+				INFOPLIST_FILE = "BQBL.io WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4544F4921B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BQBL.io/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4544F4931B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BQBL.io/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4544F4951B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BQBL.ioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-ioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BQBL.io.app/BQBL.io";
+			};
+			name = Debug;
+		};
+		4544F4961B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BQBL.ioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-ioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BQBL.io.app/BQBL.io";
+			};
+			name = Release;
+		};
+		4544F4981B5B017800552B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BQBL.ioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-ioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BQBL.io;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4544F4991B5B017800552B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BQBL.ioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-ioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BQBL.io;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4544F4371B5B017800552B49 /* Build configuration list for PBXProject "BQBL.io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F4871B5B017800552B49 /* Debug */,
+				4544F4881B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4544F4891B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F48A1B5B017800552B49 /* Debug */,
+				4544F48B1B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4544F48D1B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F48E1B5B017800552B49 /* Debug */,
+				4544F48F1B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4544F4911B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F4921B5B017800552B49 /* Debug */,
+				4544F4931B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4544F4941B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F4951B5B017800552B49 /* Debug */,
+				4544F4961B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4544F4971B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4544F4981B5B017800552B49 /* Debug */,
+				4544F4991B5B017800552B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4544F4341B5B017800552B49 /* Project object */;
+}
