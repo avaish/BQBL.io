@@ -9,13 +9,34 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize sign-in
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        
+        let googleSignIn = GIDSignIn.sharedInstance();
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        googleSignIn.delegate = self
+        
+        if !googleSignIn.hasAuthInKeychain() {
+            defaults.removeObjectForKey("user_id")
+        }
+        
+        let rootViewController = self.window?.rootViewController
+        
+        if defaults.objectForKey("user_id") == nil {
+            dispatch_async(dispatch_get_main_queue(), {
+                rootViewController!.performSegueWithIdentifier("Login", sender: self)
+            })
+        }
+        
         return true
     }
 
@@ -40,7 +61,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return GIDSignIn.sharedInstance().handleURL(url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+        if (error == nil) {
+            NSNotificationCenter.defaultCenter().postNotification(
+                NSNotification(name: "google-login",
+                    object: nil, userInfo: ["name": user.profile.name, "email": user.profile.email]))
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
 
-
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
+        print("User disconnected")
+    }
 }
 

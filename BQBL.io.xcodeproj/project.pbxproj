@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4536BC811B6F1BA20071A67B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536BC801B6F1BA20071A67B /* LoginViewController.swift */; };
+		4536BC831B6F3D400071A67B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536BC821B6F3D400071A67B /* RegisterViewController.swift */; };
 		4544F4401B5B017800552B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F43F1B5B017800552B49 /* AppDelegate.swift */; };
-		4544F4421B5B017800552B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4411B5B017800552B49 /* ViewController.swift */; };
 		4544F4451B5B017800552B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4431B5B017800552B49 /* Main.storyboard */; };
 		4544F4471B5B017800552B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4461B5B017800552B49 /* Assets.xcassets */; };
 		4544F44A1B5B017800552B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4481B5B017800552B49 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,18 @@
 		4544F4811B5B017800552B49 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4801B5B017800552B49 /* GlanceController.swift */; };
 		4544F4831B5B017800552B49 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F4821B5B017800552B49 /* ComplicationController.swift */; };
 		4544F4851B5B017800552B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544F4841B5B017800552B49 /* Assets.xcassets */; };
+		4544F49D1B5B0D7D00552B49 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544F49C1B5B0D7D00552B49 /* GamesTableViewController.swift */; };
+		4553FA891B5B2211004AA8C3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA811B5B2211004AA8C3 /* User+CoreDataProperties.swift */; };
+		4553FA8A1B5B2211004AA8C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA821B5B2211004AA8C3 /* User.swift */; };
+		4553FA8B1B5B2211004AA8C3 /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA831B5B2211004AA8C3 /* Team+CoreDataProperties.swift */; };
+		4553FA8C1B5B2211004AA8C3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA841B5B2211004AA8C3 /* Team.swift */; };
+		4553FA8D1B5B2211004AA8C3 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA851B5B2211004AA8C3 /* Game+CoreDataProperties.swift */; };
+		4553FA8E1B5B2211004AA8C3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA861B5B2211004AA8C3 /* Game.swift */; };
+		4553FA8F1B5B2211004AA8C3 /* Sport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA871B5B2211004AA8C3 /* Sport+CoreDataProperties.swift */; };
+		4553FA901B5B2211004AA8C3 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553FA881B5B2211004AA8C3 /* Sport.swift */; };
+		45A5E42C1B6F10FB00E2EF54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45A5E42B1B6F10FB00E2EF54 /* GoogleService-Info.plist */; };
+		45C2A22B1B5B139B0034A0E3 /* BQBL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45C2A2291B5B139B0034A0E3 /* BQBL.xcdatamodeld */; };
+		FAFDA5EBCF5A8BF0F0FEA799 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B585E644BE79421E72041 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +96,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09D4622070B32B4FC9CF9C72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		219B585E644BE79421E72041 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4536BC801B6F1BA20071A67B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4536BC821B6F3D400071A67B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4544F43C1B5B017800552B49 /* BQBL.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BQBL.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4544F43F1B5B017800552B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4544F4411B5B017800552B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4544F4441B5B017800552B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4544F4461B5B017800552B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4544F4491B5B017800552B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,6 +125,19 @@
 		4544F4821B5B017800552B49 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		4544F4841B5B017800552B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4544F4861B5B017800552B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544F49C1B5B0D7D00552B49 /* GamesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		4553FA811B5B2211004AA8C3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4553FA821B5B2211004AA8C3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4553FA831B5B2211004AA8C3 /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4553FA841B5B2211004AA8C3 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4553FA851B5B2211004AA8C3 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4553FA861B5B2211004AA8C3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4553FA871B5B2211004AA8C3 /* Sport+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sport+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4553FA881B5B2211004AA8C3 /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		45A5E42B1B6F10FB00E2EF54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45A5E42D1B6F11F400E2EF54 /* BQBL.io-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BQBL.io-Bridging-Header.h"; sourceTree = "<group>"; };
+		45C2A22A1B5B139B0034A0E3 /* BQBL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BQBL.xcdatamodel; sourceTree = "<group>"; };
+		5BE6530FD744A8B05202EE0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFDA5EBCF5A8BF0F0FEA799 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10D436837104A87BC3CB0222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6530FD744A8B05202EE0A /* Pods.debug.xcconfig */,
+				09D4622070B32B4FC9CF9C72 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4544F4331B5B017800552B49 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +191,8 @@
 				4544F4681B5B017800552B49 /* BQBL.io WatchKit App */,
 				4544F4771B5B017800552B49 /* BQBL.io WatchKit Extension */,
 				4544F43D1B5B017800552B49 /* Products */,
+				10D436837104A87BC3CB0222 /* Pods */,
+				D645B6C753024946E12A3397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,12 +211,18 @@
 		4544F43E1B5B017800552B49 /* BQBL.io */ = {
 			isa = PBXGroup;
 			children = (
+				45A5E42A1B6F10DF00E2EF54 /* Supporting Files */,
 				4544F43F1B5B017800552B49 /* AppDelegate.swift */,
-				4544F4411B5B017800552B49 /* ViewController.swift */,
+				4536BC801B6F1BA20071A67B /* LoginViewController.swift */,
+				4536BC821B6F3D400071A67B /* RegisterViewController.swift */,
 				4544F4431B5B017800552B49 /* Main.storyboard */,
+				45C2A2291B5B139B0034A0E3 /* BQBL.xcdatamodeld */,
 				4544F4461B5B017800552B49 /* Assets.xcassets */,
 				4544F4481B5B017800552B49 /* LaunchScreen.storyboard */,
 				4544F44B1B5B017800552B49 /* Info.plist */,
+				4544F49C1B5B0D7D00552B49 /* GamesTableViewController.swift */,
+				4553FA911B5B22F1004AA8C3 /* Core Data */,
+				45A5E42D1B6F11F400E2EF54 /* BQBL.io-Bridging-Header.h */,
 			);
 			path = BQBL.io;
 			sourceTree = "<group>";
@@ -231,6 +278,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4553FA911B5B22F1004AA8C3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4553FA811B5B2211004AA8C3 /* User+CoreDataProperties.swift */,
+				4553FA821B5B2211004AA8C3 /* User.swift */,
+				4553FA831B5B2211004AA8C3 /* Team+CoreDataProperties.swift */,
+				4553FA841B5B2211004AA8C3 /* Team.swift */,
+				4553FA851B5B2211004AA8C3 /* Game+CoreDataProperties.swift */,
+				4553FA861B5B2211004AA8C3 /* Game.swift */,
+				4553FA871B5B2211004AA8C3 /* Sport+CoreDataProperties.swift */,
+				4553FA881B5B2211004AA8C3 /* Sport.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		45A5E42A1B6F10DF00E2EF54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A5E42B1B6F10FB00E2EF54 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D645B6C753024946E12A3397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				219B585E644BE79421E72041 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,10 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4544F4911B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io" */;
 			buildPhases = (
+				2B9712D7BE4C804A28C31444 /* Check Pods Manifest.lock */,
 				4544F4381B5B017800552B49 /* Sources */,
 				4544F4391B5B017800552B49 /* Frameworks */,
 				4544F43A1B5B017800552B49 /* Resources */,
 				4544F4901B5B017800552B49 /* Embed Watch Content */,
+				FC329A029FF70741065DC336 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,11 +409,13 @@
 		4544F4341B5B017800552B49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Atharv Vaish";
 				TargetAttributes = {
 					4544F43B1B5B017800552B49 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WFA83R9TQA;
 					};
 					4544F44F1B5B017800552B49 = {
 						CreatedOnToolsVersion = 7.0;
@@ -379,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4544F44A1B5B017800552B49 /* LaunchScreen.storyboard in Resources */,
+				45A5E42C1B6F10FB00E2EF54 /* GoogleService-Info.plist in Resources */,
 				4544F4471B5B017800552B49 /* Assets.xcassets in Resources */,
 				4544F4451B5B017800552B49 /* Main.storyboard in Resources */,
 			);
@@ -417,13 +500,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B9712D7BE4C804A28C31444 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC329A029FF70741065DC336 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4544F4381B5B017800552B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4544F4421B5B017800552B49 /* ViewController.swift in Sources */,
+				4536BC811B6F1BA20071A67B /* LoginViewController.swift in Sources */,
+				4553FA8B1B5B2211004AA8C3 /* Team+CoreDataProperties.swift in Sources */,
+				4553FA901B5B2211004AA8C3 /* Sport.swift in Sources */,
+				4553FA8E1B5B2211004AA8C3 /* Game.swift in Sources */,
+				4553FA8F1B5B2211004AA8C3 /* Sport+CoreDataProperties.swift in Sources */,
 				4544F4401B5B017800552B49 /* AppDelegate.swift in Sources */,
+				4553FA8C1B5B2211004AA8C3 /* Team.swift in Sources */,
+				4544F49D1B5B0D7D00552B49 /* GamesTableViewController.swift in Sources */,
+				4553FA891B5B2211004AA8C3 /* User+CoreDataProperties.swift in Sources */,
+				4553FA8D1B5B2211004AA8C3 /* Game+CoreDataProperties.swift in Sources */,
+				4536BC831B6F3D400071A67B /* RegisterViewController.swift in Sources */,
+				4553FA8A1B5B2211004AA8C3 /* User.swift in Sources */,
+				45C2A22B1B5B139B0034A0E3 /* BQBL.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,23 +782,32 @@
 		};
 		4544F4921B5B017800552B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE6530FD744A8B05202EE0A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BQBL.io/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BQBL.io/BQBL.io-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4544F4931B5B017800552B49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D4622070B32B4FC9CF9C72 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BQBL.io/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avatarv.atharv.BQBL-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BQBL.io/BQBL.io-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -742,6 +878,7 @@
 				4544F48B1B5B017800552B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4544F48D1B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +887,7 @@
 				4544F48F1B5B017800552B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4544F4911B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.io" */ = {
 			isa = XCConfigurationList;
@@ -758,6 +896,7 @@
 				4544F4931B5B017800552B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4544F4941B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioTests" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +905,7 @@
 				4544F4961B5B017800552B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4544F4971B5B017800552B49 /* Build configuration list for PBXNativeTarget "BQBL.ioUITests" */ = {
 			isa = XCConfigurationList;
@@ -774,8 +914,22 @@
 				4544F4991B5B017800552B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45C2A2291B5B139B0034A0E3 /* BQBL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45C2A22A1B5B139B0034A0E3 /* BQBL.xcdatamodel */,
+			);
+			currentVersion = 45C2A22A1B5B139B0034A0E3 /* BQBL.xcdatamodel */;
+			path = BQBL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4544F4341B5B017800552B49 /* Project object */;
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="1.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8154.4" systemVersion="15A216g" minimumToolsVersion="Xcode 7.0">
+    <entity name="Game" representedClassName=".Game" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <relationship name="creator" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="games" inverseEntity="User" syncable="YES"/>
+        <relationship name="sport" maxCount="1" deletionRule="Nullify" destinationEntity="Sport" inverseName="games" inverseEntity="Sport" syncable="YES"/>
+        <relationship name="teams" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="Team" inverseName="game" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Sport" representedClassName=".Sport" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Game" inverseName="sport" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName=".Team" syncable="YES">
+        <attribute name="rank" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="winner" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Game" inverseName="teams" inverseEntity="Game" syncable="YES"/>
+        <relationship name="members" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="teams" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="email" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="friends" inverseEntity="User" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="creator" inverseEntity="Game" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="members" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Game" positionX="-263" positionY="27" width="128" height="103"/>
+        <element name="Sport" positionX="-540" positionY="44" width="128" height="73"/>
+        <element name="Team" positionX="-56" positionY="234" width="128" height="118"/>
+        <element name="User" positionX="160" positionY="-0" width="128" height="118"/>
+    </elements>
+</model>
